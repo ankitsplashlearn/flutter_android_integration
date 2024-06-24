@@ -9,7 +9,7 @@ class FlutterScreen extends StatelessWidget {
 
   Future<void> sendDataBackto() async {
     try {
-      await platform.invokeMethod('sendDataBack', {"data": "Hello from Flutter!"});
+      await platform.invokeMethod('sendDataBack', {"data": "Hello from Flutter to android!"});
     } on PlatformException catch (e) {
       print("Failed to send data: '${e.message}'.");
     }
